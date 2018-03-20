@@ -1,13 +1,13 @@
-#FROM ubuntu:14.04
-FROM ubuntu:16.04
+FROM ubuntu:14.04
+#FROM ubuntu:16.04
 
 ENV LANG pt_BR.UTF-8
 ENV LANGUAGE pt_BR
 ENV LC_CTYPE pt_BR.UTF-8
 ENV LC_ALL pt_BR.UTF-8
 
-#COPY config/1404_etc_apt_sources.list /etc/apt/sources.list
-COPY config/1604_etc_apt_sources.list /etc/apt/sources.list
+COPY config/1404_etc_apt_sources.list /etc/apt/sources.list
+#COPY config/1604_etc_apt_sources.list /etc/apt/sources.list
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
 
